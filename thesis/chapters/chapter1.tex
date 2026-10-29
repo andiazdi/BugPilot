@@ -1,0 +1,56 @@
+\chapter{Introduction}
+\label{chap:intro}
+
+\section{Background and Motivation}
+\label{sec:background}
+
+Software bugs are an inevitable part of software development and maintenance. When users encounter an unexpected behavior, they typically report the problem to a technical support team or create a bug report in an issue-tracking system. The quality of such reports directly affects how quickly developers can understand the problem, identify its potential cause, and implement a solution.
+
+In practice, bug reports submitted by users often lack important technical details. Users may describe symptoms in general terms without specifying the steps required to reproduce the issue, the expected and actual behavior, the software environment, or relevant error messages. As a result, developers and support engineers may need to request additional information, clarify the original report, and reproduce the problem before they can begin investigating it. These interactions increase the time required to resolve issues and create additional workload for both users and technical teams.
+
+Traditional support forms collect information through predefined fields. Although such forms help standardize incoming reports, they may not adequately address the differences between individual issues. A form that is too general may fail to collect essential information, while an overly complex form may discourage users from completing it or require them to provide irrelevant details. Therefore, there is a need for a more flexible approach to collecting information about software bugs.
+
+Intelligent assistance can potentially improve this process by analyzing a user's initial description, identifying missing information, and guiding the user toward providing a more complete and structured report. Such assistance may help bridge the gap between how users describe problems and the technical information developers need to investigate them. However, the practical value of this approach should be evaluated in comparison with conventional support forms.
+
+\section{Problem Statement}
+\label{sec:problem}
+
+The main problem addressed in this thesis is the insufficient quality and completeness of information provided in software bug reports. When a report does not contain enough information to reproduce or understand an issue, technical teams must spend additional time communicating with the reporter and collecting the missing details.
+
+Conventional support forms provide a standardized way to submit issues, but they generally rely on users to understand what information is relevant and how to describe a technical problem. This assumption does not always hold, particularly when users have limited technical knowledge or cannot identify the source of the observed behavior.
+
+An intelligent technical support form could address this limitation by adapting the information-gathering process to the user's description. Instead of relying exclusively on a fixed set of fields, it could provide contextual prompts, request missing details, and help organize the submitted information into a structured bug report.
+
+Nevertheless, introducing intelligent assistance does not automatically guarantee better results. Its effectiveness depends on whether it improves the completeness and usefulness of reports without making the submission process unnecessarily complicated. Therefore, the problem is not only to develop such a form but also to evaluate whether it offers practical advantages over a conventional approach.
+
+\section{Aim and Objectives}
+\label{sec:aim}
+
+The aim of this thesis is to develop and evaluate an intelligent technical support form designed to improve the quality of software bug reports and reduce the effort required to identify and investigate reported issues.
+
+To achieve this aim, the following objectives are defined:
+
+\begin{enumerate}
+    \item Analyze the common problems associated with collecting information about software bugs through conventional support forms.
+    \item Identify the essential information required to understand, reproduce, and investigate software issues.
+    \item Design and implement an intelligent technical support form that guides users through the process of describing a software problem.
+    \item Develop a mechanism for identifying missing or unclear information and helping users provide more complete bug reports.
+    \item Evaluate the developed solution by comparing its results with those obtained using a conventional support form.
+    \item Analyze the results to determine the practical benefits and limitations of the proposed approach.
+\end{enumerate}
+
+\section{Scope and Expected Contribution}
+\label{sec:scope}
+
+This thesis focuses on the process of collecting and structuring information about software bugs. The proposed solution is intended to assist users in preparing reports that are sufficiently detailed for further investigation by developers or technical support specialists.
+
+The scope of the work includes the design and implementation of a user-facing support form, the processing of submitted descriptions, and the presentation of structured information about reported issues. Intelligent assistance is considered a tool for improving information collection rather than a replacement for developers, automated debugging systems, or software testing tools.
+
+The evaluation focuses on the quality and completeness of submitted reports and the effort required to obtain the information needed for issue investigation. The work does not aim to develop a system capable of automatically fixing software defects or guaranteeing the correct identification of their root causes.
+
+The expected contribution of this thesis is a working prototype of an intelligent technical support form and an evaluation of its practical usefulness compared with a conventional form. The results should provide insight into how contextual guidance and automated processing can improve the initial stage of software bug reporting.
+
+\section{Thesis Structure}
+\label{sec:structure}
+
+The remainder of this thesis is organized as follows. Chapter 2 presents the background and related work concerning software bug reporting, technical support processes, and intelligent approaches to information collection. Chapter 3 describes the requirements, architecture, and design of the proposed solution. Chapter 4 presents the implementation of the intelligent technical support form and its main components. Chapter 5 describes the evaluation methodology, presents the results, and discusses the effectiveness and limitations of the proposed approach. Finally, Chapter 6 summarizes the work, draws conclusions, and identifies possible directions for future development.
