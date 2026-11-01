@@ -29,7 +29,7 @@ For each adopting company, the planned documentation collection will describe it
 
 The interface is intended to accept users' descriptions and provide clarification questions in their chosen language. It will then produce a structured report for developers. The languages evaluated and the specific service workflows and documentation used will be defined in the design and evaluation chapters. This requirement provides a direction for implementation; it does not establish equivalent reporting quality across all languages.
 
-The central uncertainty is whether adaptive questions informed by documentation improve reporting outcomes relative to a conventional structured form. Additional questions may collect useful information while also increasing reporting time or workload. A further uncertainty concerns the contribution of documentation itself: a comparison with an assisted form without documentation is needed to distinguish that contribution from the effect of the interaction. The thesis therefore treats usefulness as an empirical question involving report quality, factual fidelity, and user effort.
+The central uncertainty is whether the proposed system, combining adaptive questions with service documentation accessed through MCP, improves reporting outcomes relative to a conventional structured form. Additional questions may collect useful information while also increasing reporting time or workload. The thesis therefore treats usefulness as an empirical question involving report quality, factual fidelity, and user effort. The comparison evaluates the complete system rather than the individual contribution of its components.
 
 \section{Aim and Objectives}
 \label{sec:aim}
@@ -43,9 +43,9 @@ The following objectives support this aim:
     \item Define representative reporting scenarios, relevant report elements, and a documentation collection covering service capabilities and previously resolved problems.
     \item Design and implement a reporting prototype that detects missing or ambiguous information, asks targeted clarification questions, and structures the reporter's confirmed answers.
     \item Integrate access to service documentation through MCP and use retrieved information to inform clarification questions.
-    \item Prepare a conventional structured form and an assisted condition without documentation access to support comparative evaluation.
-    \item Evaluate report completeness, clarity, and fidelity to user-provided information, together with reporting time, interaction effort, perceived workload, and question relevance.
-    \item Analyze the results to identify the system's benefits, limitations, and the additional contribution of documentation access.
+    \item Prepare a conventional structured form as a baseline for comparison with the complete intelligent reporting system.
+    \item Evaluate report completeness, clarity, and fidelity to user-provided information, together with reporting time, interaction effort, and perceived workload.
+    \item Analyze the results to identify the benefits and limitations of the system as a whole.
 \end{enumerate}
 
 \subsection{Research Questions}
@@ -57,10 +57,9 @@ The objectives concern building and studying the system. The following research 
     \item \label{rq:quality} How does an LLM-assisted reporting form affect the completeness and clarity of bug reports compared with a conventional structured form?
     \item \label{rq:effort} How does the form affect reporting time, interaction effort, and perceived workload?
     \item \label{rq:fidelity} How faithfully do the final reports preserve user-confirmed information, and what unsupported details, if any, are introduced?
-    \item \label{rq:documentation} What additional effect does access to service documentation through MCP have on the relevance of clarification questions and the completeness of the resulting reports, compared with the same assisted form without documentation access?
 \end{enumerate}
 
-These questions allow improvements, trade-offs, or a lack of measurable benefit. RQ1 and RQ2 address report quality and reporting effort, respectively. RQ3 examines whether the output remains faithful to the reporter's evidence. RQ4 isolates the additional contribution of documentation. Chapter~\ref{chap:lr} explains how the reviewed literature motivates these questions; the evaluation chapter will define their measurements and analysis.
+These three questions allow improvements, trade-offs, or a lack of measurable benefit. RQ1 and RQ2 address report quality and reporting effort, respectively. RQ3 examines whether the output remains faithful to the reporter's evidence. In all three questions, the assisted form denotes the complete system with documentation access through MCP. Chapter~\ref{chap:lr} explains how the reviewed literature motivates these questions; the evaluation chapter will define their measurements and analysis.
 
 \section{Scope and Expected Contribution}
 \label{sec:scope}
@@ -73,7 +72,7 @@ The study focuses on what the reporting interaction collects and communicates. R
 
 Root-cause identification, automated code repair, and deployment of fixes are outside the scope. A more complete problem description may support later investigation, but improvements in reporting will not be presented as evidence of faster diagnosis or resolution. Such claims would require measurements of those downstream activities. Research on non-reproducible reports also shows that reproduction difficulties can arise from environmental differences and dependencies between bugs, beyond the wording of a report \cite{joorabchi2014}.
 
-The expected contribution is a working prototype and a comparative evaluation of documentation-informed reporting assistance. The contribution lies in implementing and assessing the interaction in the defined setting, including its factual fidelity and the additional value of documentation. It does not depend on claiming that interactive reporting or the use of external knowledge is new. The conclusions will be bounded by the service scenario, reporting tasks, languages, documentation, and participants included in the study.
+The expected contribution is a working prototype and a comparative evaluation of documentation-informed reporting assistance. The contribution lies in implementing and assessing the complete reporting interaction in the defined setting, including its factual fidelity and the effort required from users. The comparison will support conclusions about the system as a whole, without attributing observed differences specifically to documentation access or another individual component. The conclusions will be bounded by the service scenario, reporting tasks, languages, documentation, and participants included in the study.
 
 \section{Thesis Structure}
 \label{sec:structure}
